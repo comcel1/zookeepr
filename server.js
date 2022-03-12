@@ -1,6 +1,8 @@
 // assign express to the app variable so that it can be chained to other methods on the Express server.
 const express = require("express");
 const app = express();
+// NOTE FOR TUTOR needed to add requirement of path
+const path = require("path");
 
 const apiRoutes = require("./routes/apiRoutes");
 
@@ -10,6 +12,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // API routes
 app.use("/api", apiRoutes);
+// Add middleware to connect CSS
+app.use(express.static("public"));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/index.html"));
+});
 
 // Server
 const PORT = process.env.PORT || 3001;
