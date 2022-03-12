@@ -135,6 +135,38 @@
         "hungry"
       ],
       "id": "13"
+    },
+    {
+      "name": "Lion",
+      "species": "Large Cat",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany"
+      ],
+      "id": "14"
+    },
+    {
+      "name": "Lion",
+      "species": "Big Cat",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany"
+      ],
+      "id": "15"
+    },
+    {
+      "name": "Hope",
+      "species": "Dog",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany",
+        "loving",
+        "goofy"
+      ],
+      "id": "16"
     }
   ]
 }

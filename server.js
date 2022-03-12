@@ -14,8 +14,20 @@ app.use(express.json());
 app.use("/api", apiRoutes);
 // Add middleware to connect CSS
 app.use(express.static("public"));
-
+// server for HTML page
 app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/index.html"));
+});
+// server for animals HTML page
+app.get("/animals", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/animals.html"));
+});
+//server for zookeepers HTML page
+app.get("/zookeepers", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/zookeepers.html"));
+});
+// WILDCARD "catch all" (must come last!!!)
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
