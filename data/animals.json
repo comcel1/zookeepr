@@ -167,6 +167,17 @@
         "goofy"
       ],
       "id": "16"
+    },
+    {
+      "name": "Luna",
+      "species": "Cat",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry",
+        "loving",
+        "goofy"
+      ],
+      "id": "17"
     }
   ]
 }

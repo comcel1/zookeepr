@@ -39,6 +39,7 @@ const getAnimals = (formData = {}) => {
   });
 
   console.log(queryUrl);
+
   // when using fetch() we have to check to see if the ok property
   // in the response is true or false
   fetch(queryUrl)
